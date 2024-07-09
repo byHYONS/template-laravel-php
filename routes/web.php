@@ -19,4 +19,4 @@ use Illuminate\Support\Facades\Route;
 // });
 
 //? rotta per la home:
-Route::get('/', [PageController::class, 'index']);
+Route::get('/', [PageController::class, 'index'])->name('home');
