@@ -15,7 +15,7 @@ class Controller extends BaseController
 
         $data = 'sono un dato passato alla pagina';
 
-        return view('index', $data)->name('home');
+        return view('index', $data)->name('index');
 
     }
 
