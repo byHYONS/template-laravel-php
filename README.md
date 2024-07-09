@@ -40,11 +40,11 @@ npm run dev
 ```
 php artisan make:controller Guest/PageController
 ```
-Nel file `PageCntroller.php` si occuperà di ritornare la **view** della pagina:
+Il file `PageCntroller.php` si occuperà di ritornare la **view** della pagina, andrà aggunta questa riga di codice:
 ```
 return view('index', $data)->name(home);
 ```
-- Nel file `web.php` verrà gestita solamente la chiamata che verrà girata alla `pageController`:
+- Il file `web.php` gestirà solamente la chiamata che verrà girata alla `pageController`, nel caso non ci fosse andrà aggiunta questa righa di codice:
 ```
 Route::get('/', [PageController::class, 'index']);
 ```
